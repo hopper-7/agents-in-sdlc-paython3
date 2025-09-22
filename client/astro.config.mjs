@@ -1,3 +1,7 @@
+/**
+ * Astro configuration for the Tailspin Toys Crowd Funding platform.
+ * Configures the build settings, integrations, and deployment adapter for the frontend.
+ */
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Application startup script for the Tailspin Toys Crowd Funding platform
+# Sets up environment and starts both Flask backend and Astro frontend servers
+# Usage: ./scripts/start-app.sh
+
 # Define color codes
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color

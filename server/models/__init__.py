@@ -1,3 +1,7 @@
+"""
+Database models initialization for the Tailspin Toys Crowd Funding platform.
+Sets up SQLAlchemy database instance and imports all model classes.
+"""
 from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
