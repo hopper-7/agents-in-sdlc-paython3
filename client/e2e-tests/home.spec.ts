@@ -11,16 +11,18 @@ test.describe('Home Page', () => {
   test('should display the main heading', async ({ page }) => {
     await page.goto('/');
     
-    // Check that the main heading is present
-    const mainHeading = page.locator('h1').first();
-    await expect(mainHeading).toHaveText('Tailspin Toys');
+    // Check that the main heading is present - look for the hero heading specifically
+    const mainHeading = page.locator('main h1').first();
+    await expect(mainHeading).toContainText('Welcome to');
+    await expect(mainHeading).toContainText('Tailspin Toys');
   });
 
   test('should display the welcome message', async ({ page }) => {
     await page.goto('/');
     
-    // Check that the welcome message is present
-    const welcomeMessage = page.locator('p').first();
-    await expect(welcomeMessage).toHaveText('Find your next game! And maybe even back one! Explore our collection!');
+    // Check that the welcome message is present - looking for the main subtitle
+    const welcomeMessage = page.locator('p').filter({ hasText: 'Discover extraordinary board games' });
+    await expect(welcomeMessage).toContainText('Discover extraordinary board games where');
+    await expect(welcomeMessage).toContainText('DevOps meets tabletop');
   });
 });
