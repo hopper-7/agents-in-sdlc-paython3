@@ -211,6 +211,23 @@ Tips: 可以在 GitHub Pull Requests 的界面中, 看到目前的 Pull Requests
 #playwright 幫我找 有關 github 的演講主題
 https://www.digitimes.com.tw/Seminar/DevDaysAsia2025/index.html
 ```
+
+此命令會使用 Playwright MCP 伺服器來：
+1. 導覽到 DevDays Asia 2025 研討會網站
+2. 搜尋會議標題、描述和講者資訊中與 GitHub 相關的關鍵字
+3. 擷取相關的簡報主題
+4. 提供 GitHub 相關簡報的建議
+
+**實作範例：** 我們提供了完整的實作範例來示範這個功能：
+- `scripts/playwright-github-search.py` - Python 實作
+- `scripts/playwright-github-search.js` - Node.js 實作  
+- `docs/playwright-github-search.md` - 詳細文件說明
+
+執行範例：
+```bash
+python scripts/playwright-github-search.py
+```
+
 ### 使用 Agent mode + playwright mcp 工具, 做自動化測試
 ```
 #playwright to test games.spec.ts and home.spec.ts
