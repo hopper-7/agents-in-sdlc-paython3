@@ -2,23 +2,37 @@
 // Import any necessary dependencies
 ---
 
-<header class="bg-blue-500 dark:bg-blue-700 text-white p-4 shadow-md transition-colors duration-300">
+<header class="glass-card border-0 border-b border-slate-700/30 text-white p-4 shadow-2xl relative z-50">
+  <!-- Decorative gradient line -->
+  <div class="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent"></div>
+  
   <div class="container mx-auto flex justify-between items-center pl-4 pr-4">
     <div class="flex items-center">
       <div class="relative group">
-        <button id="menu-toggle" class="focus:outline-none mr-4">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <button id="menu-toggle" class="focus:outline-none mr-4 p-2 rounded-lg hover:bg-slate-700/30 transition-all duration-300 group">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 transition-transform duration-300 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
-        <nav id="menu" class="hidden absolute left-0 mt-2 w-48 bg-white dark:bg-slate-800 text-slate-800 dark:text-white rounded shadow-lg z-10 transition-colors duration-300">
-          <ul class="py-1">
-            <li><a href="/" class="block px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-700">Home</a></li>
-            <li><a href="/about" class="block px-4 py-2 hover:bg-slate-100 dark:hover:bg-slate-700">About</a></li>
+        <nav id="menu" class="hidden absolute left-0 mt-2 w-48 glass-card text-slate-100 rounded-xl shadow-2xl z-10 overflow-hidden">
+          <ul class="py-2">
+            <li><a href="/" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 transition-all duration-300 border-l-2 border-transparent hover:border-blue-400">Home</a></li>
+            <li><a href="/about" class="block px-4 py-3 hover:bg-gradient-to-r hover:from-blue-500/20 hover:to-purple-500/20 transition-all duration-300 border-l-2 border-transparent hover:border-purple-400">About</a></li>
           </ul>
         </nav>
       </div>
-      <h1 class="text-xl font-bold"><a href="/" class="hover:underline">Tailspin Toys</a></h1>
+      <h1 class="text-xl font-bold">
+        <a href="/" class="gradient-text hover:scale-105 transition-transform duration-300 inline-block">
+          Tailspin Toys
+        </a>
+      </h1>
+    </div>
+    
+    <!-- Add a decorative element -->
+    <div class="hidden md:flex items-center space-x-2">
+      <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+      <div class="w-2 h-2 bg-purple-400 rounded-full animate-pulse" style="animation-delay: 0.5s;"></div>
+      <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse" style="animation-delay: 1s;"></div>
     </div>
   </div>
 </header>

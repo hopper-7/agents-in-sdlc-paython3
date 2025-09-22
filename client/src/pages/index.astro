@@ -5,10 +5,45 @@ import "../styles/global.css";
 ---
 
 <Layout title="Tailspin Toys - Crowdfunding your new favorite game!">
-  <div class="py-8">
-    <div class="max-w-3xl mb-10">
-      <h1 class="text-4xl font-bold mb-4 text-slate-100">Welcome to Tailspin Toys</h1>
-      <p class="text-xl text-slate-300">Find your next game! And maybe even back one! Explore our collection!</p>
+  <div class="relative z-10 py-8">
+    <!-- Enhanced hero section -->
+    <div class="max-w-4xl mb-16 relative">
+      <!-- Hero background effect -->
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 via-purple-600/20 to-emerald-600/20 rounded-3xl blur-3xl -z-10"></div>
+      
+      <div class="glass-card rounded-3xl p-8 md:p-12 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-purple-500/20 to-emerald-500/20 rounded-full blur-2xl"></div>
+        
+        <div class="relative z-10">
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 fade-in-up">
+            <span class="gradient-text">Welcome to</span><br>
+            <span class="text-slate-100">Tailspin Toys</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-slate-300 mb-8 fade-in-up leading-relaxed" style="animation-delay: 0.2s;">
+            Find your next game! And maybe even back one! 
+            <span class="gradient-text font-semibold">Explore our collection!</span>
+          </p>
+          
+          <!-- Call-to-action buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 fade-in-up" style="animation-delay: 0.4s;">
+            <button class="btn-primary text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:scale-105">
+              <span class="flex items-center justify-center">
+                🎮 Browse Games
+                <svg class="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                </svg>
+              </span>
+            </button>
+            <button class="glass-card border border-slate-600/50 text-slate-300 font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:border-purple-500/50 hover:text-white hover:scale-105">
+              <span class="flex items-center justify-center">
+                ⭐ Featured Games
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
     
     <GameList client:only="svelte" />
