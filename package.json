@@ -1,0 +1,30 @@
+{
+  "name": "playwright-github-search",
+  "version": "1.0.0",
+  "description": "Playwright MCP tools demonstration for searching GitHub-related presentation topics",
+  "main": "scripts/playwright-github-search.js",
+  "scripts": {
+    "search": "node scripts/playwright-github-search.js",
+    "search-python": "python scripts/playwright-github-search.py",
+    "install-playwright": "npx playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "mcp",
+    "github",
+    "copilot",
+    "devdays",
+    "conference",
+    "search"
+  ],
+  "author": "GitHub Copilot Agent",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hopper-7/agents-in-sdlc-paython3"
+  }
+}
