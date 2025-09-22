@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Environment setup script for the Tailspin Toys Crowd Funding platform
+# Sets up Python virtual environment and installs all required dependencies
+# for both server (Flask) and client (Node.js) components
+
 # Setup environment: Python virtualenv and dependencies
 
 # Determine project root

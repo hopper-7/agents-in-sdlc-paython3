@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Test runner script for the Tailspin Toys Crowd Funding platform
+# Sets up environment and runs all Python/Flask server tests
+# Usage: ./scripts/run-server-tests.sh
+
 # Determine project root
 if [[ $(basename $(pwd)) == "scripts" || $(basename $(pwd)) == "server" ]]; then
     PROJECT_ROOT=$(pwd)/..
